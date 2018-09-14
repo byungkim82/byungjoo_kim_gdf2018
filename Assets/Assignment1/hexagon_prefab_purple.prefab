@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 50587640462681760}
   - component: {fileID: 60757004214024184}
   m_Layer: 0
-  m_Name: hexagon_prefab
+  m_Name: hexagon_prefab_purple
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -70,7 +70,7 @@ PolygonCollider2D:
   m_GameObject: {fileID: 1989740442339470}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: f215743453e9fe04390d98abe4396756, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0

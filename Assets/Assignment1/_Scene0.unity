@@ -233,6 +233,11 @@ Prefab:
       propertyPath: m_Name
       value: hexagon_instance
       objectReference: {fileID: 0}
+    - target: {fileID: 60757004214024184, guid: c2be5724f0387f64b9df69143f4cd008,
+        type: 2}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: f215743453e9fe04390d98abe4396756, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c2be5724f0387f64b9df69143f4cd008, type: 2}
   m_IsPrefabAsset: 0

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PlayerController : MonoBehaviour {
+public class PlayerController2 : MonoBehaviour {
 
     public float speed;
     public Text scoreText;
@@ -14,20 +14,22 @@ public class PlayerController : MonoBehaviour {
     private int count2;
     private Rigidbody2D rb;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start()
+    {
         rb = GetComponent<Rigidbody2D>();
         score = 0;
         count1 = 0;
         count2 = 0;
         winText.text = "";
         SetScoreText();
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
 
     void FixedUpdate()
     {
@@ -45,11 +47,12 @@ public class PlayerController : MonoBehaviour {
             count1 = count1 + 1;
             score = score + 1;
             SetScoreText();
-        } else if (other.gameObject.CompareTag("PickUp2"))
+        }
+        else if (other.gameObject.CompareTag("PickUp2"))
         {
             other.gameObject.SetActive(false);
             count2 = count2 + 1;
-            score = score + 2;
+            score = score + 5;
             SetScoreText();
         }
     }
@@ -57,7 +60,7 @@ public class PlayerController : MonoBehaviour {
     void SetScoreText()
     {
         scoreText.text = "Score :" + score.ToString() + "\nPickUp 1 :" + count1.ToString() + "\nPickUp 2 :" + count2.ToString();
-        if (score >= 11)
+        if (score >= 26)
         {
             winText.text = "You win!";
         }
